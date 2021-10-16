@@ -1,0 +1,27 @@
+{
+  "name": "atm-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "account.js",
+  "dependencies": {
+    "strip-ansi": "^5.2.0",
+    "prompt-sync": "^4.2.0",
+    "ansi-regex": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algreen27/atm-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/algreen27/atm-project/issues"
+  },
+  "homepage": "https://github.com/algreen27/atm-project#readme"
+}
