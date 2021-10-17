@@ -4,6 +4,4 @@ const pin = 1968;
 
 var balance = 23000;
 
-module.export = {pin: pin,
-    balance: balance
-}
+module.exports = {pin: pin, bal: balance}

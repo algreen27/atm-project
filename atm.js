@@ -6,14 +6,18 @@
 // •	deposit
 // •	validatePin
 
-const account = require('./account')
+const account = require('./account');
+
+
 
 function addTwoNumbers(numberOne, numberTwo){
-    return numberOne + numberTwo;
+    let sum = numberOne + numberTwo;
+    return sum;
 }
 
 function subtractTwoNumbers(numberOne, numberTwo){
-    return numberOne - numberTwo;
+    let diff = numberOne - numberTwo;
+    return diff;
 }
 
 function validatePin(validate){
@@ -21,17 +25,26 @@ function validatePin(validate){
         return true;
     }else{
         console.log('Invalid, please try again');
-        validatePin();
+        validatePin(validate);
     }  
 }
 
-function getBalance(amount){
-    let balance =+ sum;
+function getBalance(check){ 
+    let available = account.bal
+    console.log(available);
+
 }
 
-function withdrawFunds(){}
+function withdrawFunds(numberOne, numberTwo){
+    let takeOut = account.bal - numberTwo;
+    return takeOut; 
+}
 
-function depositFunds(){}
+function depositFunds(numberOne, numberTwo){
+    let putIn = putIn + account.bal;
+    return putIn;
+
+}
 
 
 
