@@ -7,6 +7,7 @@
 // •	validatePin
 
 const account = require('./account');
+const prompt = require('prompt-sync')();
 
 
 
@@ -20,24 +21,31 @@ function subtractTwoNumbers(numberOne, numberTwo){
     return diff;
 }
 
-function validatePin(validate){
-    if(userInput = account.pin){
-        return true;
-    }else{
+function validatePin(numberOne){
+    let pinNumber = numberOne;
+    if(pinNumber == account.pin){
+        console.log('PIN Accepted')
+           
+    }
+    else{
         console.log('Invalid, please try again');
-        validatePin(validate);
-    }  
+        // validatePin(validate);
+        console.log('Please enter your PIN.');
+        let pinNumber = prompt(); 
+        validatePin(pinNumber); 
+    }
+    
 }
 
-function getBalance(check){ 
+function getBalance(){ 
     let available = account.bal
     console.log(available);
 
 }
 
-function withdrawFunds(numberOne, numberTwo){
-    let takeOut = account.bal - numberTwo;
-    return takeOut; 
+function withdrawFunds(numberOne){
+    let takeOut = account.bal- numberOne;
+    console.log(takeOut);
 }
 
 function depositFunds(numberOne, numberTwo){
@@ -57,4 +65,3 @@ module.exports = {
     df: depositFunds,
     val: validatePin
 }
-
