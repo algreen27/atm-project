@@ -14,7 +14,10 @@ function checkMenu(){
     // check balance
         case '1':
     // call function to check balance
-            console.log('Your account balance is' + ' ' + account.bal);
+            atm.gb();
+            console.log('Your account balance is' + ' ' + atm.gb());
+            // console.log('Your account balance is' + ' ' + account.bal);
+
             console.log('Would you like another transaction? 1 yes, 2 no.');
             let chooseAgain = prompt();
             if(chooseAgain == '1'){

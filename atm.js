@@ -39,7 +39,8 @@ function validatePin(numberOne){
 
 function getBalance(){ 
     let available = account.bal
-    console.log(available);
+    return available;
+    // console.log(available);
 
 }
 
